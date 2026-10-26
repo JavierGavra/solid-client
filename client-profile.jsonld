@@ -1,16 +1,17 @@
 {
   "@context": ["https://www.w3.org/ns/solid/oidc-context.jsonld"],
   "client_id": "https://javiergavra.github.io/solid-client/client-profile.jsonld",
-  "client_name": "Pod Solid Project",
+  "client_name": "Flutterpod",
   "redirect_uris": [
     "https://javiergavra.github.io/solid-client/redirect.html",
-    "com.jarganaya.podsolidproject://redirect"
+    "com.example.flutterpod://redirect"
   ],
   "post_logout_redirect_uris": [
     "https://javiergavra.github.io/solid-client/redirect.html",
-    "com.jarganaya.podsolidproject://redirect"
+    "com.example.flutterpod://redirect"
   ],
   "grant_types": ["refresh_token", "authorization_code"],
   "response_types": ["code"],
-  "scope" : "openid profile offline_access webid"
+  "scope" : "openid profile offline_access webid",
+  "token_endpoint_auth_method": "none"
 }
