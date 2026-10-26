@@ -1,0 +1,11 @@
+{
+  "@context": "https://www.w3.org/ns/solid/oidc-context.jsonld",
+  "client_id": "https://JavierGavra.github.io/solid-client/client-profile.jsonld",
+  "client_name": "Pod Solid Project",
+  "redirect_uris": ["com.jarganaya.podsolidproject://redirect"],
+  "post_logout_redirect_uris": ["com.jarganaya.podsolidproject://redirect"],
+  "grant_types": ["refresh_token", "authorization_code"],
+  "response_types": ["code"],
+  "scope": "openid offline_access webid",
+  "token_endpoint_auth_method": "none"
+}
