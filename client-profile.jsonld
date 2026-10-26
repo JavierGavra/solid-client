@@ -12,6 +12,5 @@
   ],
   "grant_types": ["refresh_token", "authorization_code"],
   "response_types": ["code"],
-  "scope": "openid offline_access webid",
-  "token_endpoint_auth_method": "none"
+  "scope" : "openid profile offline_access webid"
 }
