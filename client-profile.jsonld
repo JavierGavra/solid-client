@@ -1,7 +1,8 @@
 {
-  "@context": ["https://www.w3.org/ns/solid/oidc-context.jsonld"],
+  "@context": "https://www.w3.org/ns/solid/oidc-context.jsonld",
   "client_id": "https://javiergavra.github.io/solid-client/client-profile.jsonld",
   "client_name": "Flutterpod",
+  "application_type": "native",
   "redirect_uris": [
     "https://javiergavra.github.io/solid-client/redirect.html",
     "com.example.flutterpod://redirect"
@@ -10,8 +11,11 @@
     "https://javiergavra.github.io/solid-client/redirect.html",
     "com.example.flutterpod://redirect"
   ],
-  "grant_types": ["refresh_token", "authorization_code"],
-  "response_types": ["code"],
   "scope" : "openid profile offline_access webid",
+  "grant_types": [
+    "authorization_code"
+    "refresh_token",
+  ],
+  "response_types": ["code"],
   "token_endpoint_auth_method": "none"
 }
